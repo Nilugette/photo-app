@@ -12,6 +12,14 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { :host => 'https://photo-app-by-laure.herokuapp.com/', :protocol => 'https' }
   config.action_mailer.perform_deliveries = true
+  config.action_mailer.smtp_settings = {
+    port: 587,
+    address: 'smtp.gmail.com',
+    user_name: ENV['SMTP_USER_NAME'],
+    password: ENV['SMTP_PASSWORD'],
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
