@@ -170,6 +170,7 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    ruby_http_client (3.5.1)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -184,6 +185,8 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    sendgrid-ruby (6.3.7)
+      ruby_http_client (~> 3.4)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -196,6 +199,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    stripe (5.28.0)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -249,9 +253,11 @@ DEPENDENCIES
   rails_12factor
   sass-rails (>= 6)
   selenium-webdriver
+  sendgrid-ruby
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
+  stripe
   turbolinks (~> 5)
   twitter-bootstrap-rails
   tzinfo-data
