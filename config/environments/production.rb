@@ -13,8 +13,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'https://photo-app-by-laure.herokuapp.com/', :protocol => 'https' }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
-    :user_name => ENV['SMTP_USER_NAME'],
-    :password => ENV['SMTP_USER_NAME'],
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
     :domain => 'heroku.com',
     :address => 'smtp.sendgrid.net',
     :port => 587,
